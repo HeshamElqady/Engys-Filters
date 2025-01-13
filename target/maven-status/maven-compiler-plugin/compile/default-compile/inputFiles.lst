@@ -1,0 +1,13 @@
+C:\PC\ProgAvanzata\EngysFilters\src\main\java\it\elqady\hesham\engys\filters\logical\NotFilter.java
+C:\PC\ProgAvanzata\EngysFilters\src\main\java\it\elqady\hesham\engys\filters\literal\FalseFilter.java
+C:\PC\ProgAvanzata\EngysFilters\src\main\java\it\elqady\hesham\engys\filters\literal\TrueFilter.java
+C:\PC\ProgAvanzata\EngysFilters\src\main\java\it\elqady\hesham\engys\filters\comparison\GreaterThanFilter.java
+C:\PC\ProgAvanzata\EngysFilters\src\main\java\it\elqady\hesham\engys\filters\comparison\PresenceFilter.java
+C:\PC\ProgAvanzata\EngysFilters\src\main\java\it\elqady\hesham\engys\filters\comparison\LessThanFilter.java
+C:\PC\ProgAvanzata\EngysFilters\src\main\java\it\elqady\hesham\engys\filters\logical\AndFilter.java
+C:\PC\ProgAvanzata\EngysFilters\src\main\java\it\elqady\hesham\engys\filters\comparison\RegexFilter.java
+C:\PC\ProgAvanzata\EngysFilters\src\main\java\it\elqady\hesham\engys\filters\Filter.java
+C:\PC\ProgAvanzata\EngysFilters\src\main\java\it\elqady\hesham\engys\filters\logical\OrFilter.java
+C:\PC\ProgAvanzata\EngysFilters\src\main\java\it\elqady\hesham\engys\filters\exception\FiltersException.java
+C:\PC\ProgAvanzata\EngysFilters\src\main\java\it\elqady\hesham\engys\filters\parser\FilterParser.java
+C:\PC\ProgAvanzata\EngysFilters\src\main\java\it\elqady\hesham\engys\filters\comparison\EqualFilter.java
