@@ -34,7 +34,6 @@ public class AndFilterTest {
         Filter maxAgeFilter = new LessThanFilter("Age","60");
         Filter roleFilter = new EqualFilter("Role","Administrator");
         Filter andFilter = new AndFilter(companyFilter,enabledFilter,genderPresenceFilter,roleFilter,rolePresenceFilter,nameCheckFilter,unEmployedFilter,minAgeFilter,maxAgeFilter);
-        System.err.println(andFilter);
         assertTrue(andFilter.matches(resource));
     }
 

@@ -6,19 +6,19 @@ import java.util.Map;
 
 public class PresenceFilter implements Filter {
 
-    private final String property;
+    private final String key;
 
     public PresenceFilter(String property) {
-        this.property = property;
+        this.key = property;
     }
 
     @Override
     public boolean matches(Map<String, String> resource) {
-        return resource.containsKey(property);
+        return resource.containsKey(key);
     }
 
-    @Override
-    public String toString(){
-        return String.format("present(%s)", property);
+
+    public String getKey() {
+        return key;
     }
 }

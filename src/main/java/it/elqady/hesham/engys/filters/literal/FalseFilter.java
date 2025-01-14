@@ -1,8 +1,8 @@
 package it.elqady.hesham.engys.filters.literal;
 
-import it.elqady.hesham.engys.filters.exception.FiltersException;
 import it.elqady.hesham.engys.filters.Filter;
 import it.elqady.hesham.engys.filters.comparison.PresenceFilter;
+import it.elqady.hesham.engys.filters.exception.FiltersException;
 
 import java.util.Map;
 
@@ -25,8 +25,7 @@ public class FalseFilter implements Filter {
         return Boolean.parseBoolean(value) == Boolean.FALSE;
     }
 
-    @Override
-    public String toString() {
-        return String.format("false(%s)", key);
+    public String getKey() {
+        return key;
     }
 }

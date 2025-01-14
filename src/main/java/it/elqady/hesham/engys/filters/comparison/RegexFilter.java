@@ -1,7 +1,7 @@
 package it.elqady.hesham.engys.filters.comparison;
 
-import it.elqady.hesham.engys.filters.exception.FiltersException;
 import it.elqady.hesham.engys.filters.Filter;
+import it.elqady.hesham.engys.filters.exception.FiltersException;
 
 import java.util.Map;
 
@@ -21,8 +21,12 @@ public class RegexFilter implements Filter {
         return resource.get(key).matches(regex);
     }
 
-    @Override
-    public String toString() {
-        return String.format("regex(%s, \"%s\")", key, regex);
+
+    public String getKey() {
+        return key;
+    }
+
+    public String getRegex() {
+        return regex;
     }
 }

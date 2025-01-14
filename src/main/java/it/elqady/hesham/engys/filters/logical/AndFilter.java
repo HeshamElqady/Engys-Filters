@@ -18,11 +18,8 @@ public class AndFilter implements Filter {
         return filters.stream().allMatch(filter -> filter.matches(resource));
     }
 
-    @Override
-    public String toString() {
-        return filters.stream()
-                .map(Filter::toString)
-                .reduce((a, b) -> String.format("and(%s, %s)", a, b))
-                .orElse("true");
+
+    public List<Filter> getFilters() {
+        return filters;
     }
 }

@@ -1,7 +1,7 @@
 package it.elqady.hesham.engys.filters.comparison;
 
-import it.elqady.hesham.engys.filters.exception.FiltersException;
 import it.elqady.hesham.engys.filters.Filter;
+import it.elqady.hesham.engys.filters.exception.FiltersException;
 
 import java.util.Map;
 
@@ -40,8 +40,11 @@ public class GreaterThanFilter implements Filter {
     }
 
 
-    @Override
-    public String toString() {
-        return String.format("greaterThan(%s, %s)", key, value);
+    public String getKey() {
+        return key;
+    }
+
+    public String getValue() {
+        return value;
     }
 }

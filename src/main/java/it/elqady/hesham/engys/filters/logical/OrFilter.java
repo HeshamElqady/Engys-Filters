@@ -1,5 +1,7 @@
 package it.elqady.hesham.engys.filters.logical;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import it.elqady.hesham.engys.filters.Filter;
 
 import java.util.List;
@@ -20,11 +22,7 @@ public class OrFilter implements Filter {
                 .reduce(false, Boolean::logicalOr);
     }
 
-    @Override
-    public String toString() {
-        return filters.stream()
-                .map(Filter::toString)
-                .reduce((a, b) -> String.format("or(%s, %s)", a, b))
-                .orElse("true");
+    public List<Filter> getFilters() {
+        return filters;
     }
 }

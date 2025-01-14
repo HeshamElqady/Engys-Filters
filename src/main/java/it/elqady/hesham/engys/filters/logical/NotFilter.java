@@ -17,9 +17,8 @@ public class NotFilter implements Filter {
         return !filter.matches(resource);
     }
 
-    @Override
-    public String toString() {
-        return String.format("not(%s)", filter.toString());
-    }
 
+    public Filter getFilter() {
+        return filter;
+    }
 }
